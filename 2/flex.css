@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; 
+}    
+main{
+    display: flex;
+}
+main > div{
+    min-height: 500px;
+    padding: 10px;
+}
+.title{
+    font-size: 45px;
+    justify-content: center;
+    
+}
+.first{
+    min-height: 110.5px;
+    background-color: rgb(61, 133, 235);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 690px;
+}
+#second{
+    background-color: burlywood;
+    width: 25%;
+}
+#third{
+    background-color: rgb(220, 255, 169);
+    width: 25%;
+    
+    
+}
+#fourth{
+    background-color: burlywood;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 100px;
+}
+#fifth-sixth{
+    display:flex; 
+    left:0; 
+    right:0; 
+    top:100px; 
+    bottom:0;
+    flex: 1 0 auto;
+}
+#fifth-sixth > div{
+    padding: 10px;
+    display: flex;
+}
+#fifth{
+    background-color: lightgray;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#sixth{
+    background-color: rgb(220, 255, 169);
+    width: 50%;
+    
+}
+#test{
+    
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+#menu{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+#menu > a{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+}
+.list > li{
+    text-align: left;
+}

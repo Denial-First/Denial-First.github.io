@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; 
+}    
+main{
+    display: flex;
+    text-align: center;
+}
+main > div{
+    min-height: 200px;
+    padding: 10px;
+}
+.title{
+    font-size: 45px;
+    justify-content: center;
+}
+.first{
+    min-height: 110.5px;
+    background-color: rgb(61, 133, 235);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#second{
+    background-color: burlywood;
+    flex: 1;
+    /*min-width: 463px;*/
+}
+#third{
+    background-color: rgb(220, 255, 169);
+    flex: 1;
+    
+}
+#fourth{
+    background-color: burlywood;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 100px;
+}
+#fifth-sixth{
+    display:flex; 
+    
+    
+}
+#fifth-sixth > div{
+    padding: 10px;
+    display: flex;
+    flex: 1;
+}
+#fifth{
+    background-color: lightgray;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#sixth{
+    background-color: rgb(220, 255, 169);
+    
+    
+}
+#test{
+    
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+#menu{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+#menu > a{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.list > li{
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    main {
+      flex-direction: column;
+      text-align: center;
+    }
+    .first{
+        justify-content: center;
+        text-align:center;
+        flex-direction: column;
+    }
+  }
