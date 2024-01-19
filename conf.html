@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="conf.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+    </head>
+    <body style="display: flex;">
+        
+        <div id="participants">participants
+            <div id="member-list"></div>
+        </div>
+        <div id="videos-wrapper">
+            <div id="videos"></div>
+            <div id="big-frame"></div>
+        </div>
+        <div id="chat">chat
+            <div id="messages"></div>
+            <form id="message_form">
+                <input type="text" name="message" />
+            </form>
+        </div>
+        
+        <div id="controls"> 
+            <div class='control-btns' id="camera-btn"><image src='images/camera_off.png' style="transform: translateY(-7%);"></image></div>
+            <div class='control-btns' id="mic-btn"><image src='images/mic_off.png'></image></div>
+            <div class='control-btns' id="screenshare-btn"><image src='images/screenshare.png' style="scale:1.2"></image></div>
+            <a href="index.html">
+            <div class='control-btns' id="leave-btn"><image src='images/leave.png' style="scale:1.25;"></image></div>
+            </a>
+        </div>
+    </body>
+    <SCRIPT SRC="AgoraRTC_N-4.20.0.js"></SCRIPT>
+    <SCRIPT SRC="agora-rtm-sdk-1.5.1.js"></SCRIPT>
+    <SCRIPT type="module" SRC="conf.js"></SCRIPT>
+    <SCRIPT SRC="conf_rtm.js"></SCRIPT>
+    
+    
+    
+</html>
+
