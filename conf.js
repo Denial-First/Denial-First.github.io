@@ -105,8 +105,8 @@ let joinRoomInit = async () => {
     .getElementById(`user-container-${uid}`)
     .addEventListener("click", expandVideoFrame);
   localTracks[1].play(`user-${uid}`);
-  
-  let members = await client.remoteUsers();
+
+  let members = await client.remoteUsers;
   for (let i = 0; i < members.length; i++) {
     await client.subscribe(members[i], 'audio');
     await client.subscribe(members[i], 'video');
@@ -171,7 +171,6 @@ let handleUserLeft = async (user) => {
       videos[i].style.height = "480px";
     }
   }
-  leaveChannel();
 };
 
 joinRoomInit();
@@ -212,6 +211,7 @@ let clickMic = async () => {
 let clickScreenShare = async (e) => {
   e.preventDefault();
   if (screenShare) {
+   
     disableScreenShare();
   }
     
