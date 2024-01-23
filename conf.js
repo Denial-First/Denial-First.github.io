@@ -105,6 +105,12 @@ let joinRoomInit = async () => {
     .getElementById(`user-container-${uid}`)
     .addEventListener("click", expandVideoFrame);
   localTracks[1].play(`user-${uid}`);
+  
+  let members = await channel.getMembers();
+  for (let i = 0; i < members.length; i++) {
+    await client.subscribe(members[i], 'audio');
+    await client.subscribe(members[i], 'video');
+  }
 
   client.on("user-published", handleUserPublished);
   client.on('user-unpublished', handleUserUnublished)
@@ -207,6 +213,10 @@ let clickScreenShare = async (e) => {
   if (!screenShare) {
    
     disableScreenShare();
+  }
+    
+  else {
+    enableScreenShare();
   }
 };
 
