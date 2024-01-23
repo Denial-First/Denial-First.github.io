@@ -106,11 +106,11 @@ let joinRoomInit = async () => {
     .addEventListener("click", expandVideoFrame);
   localTracks[1].play(`user-${uid}`);
 
-  let members = await client.remoteUsers;
-  for (let i = 0; i < members.length; i++) {
-    await client.subscribe(members[i], 'audio');
-    await client.subscribe(members[i], 'video');
-  }
+  // let members = await client.remoteUsers;
+  // for (let i = 0; i < members.length; i++) {
+  //   await client.subscribe(members[i], 'audio');
+  //   await client.subscribe(members[i], 'video');
+  // }
 
   client.on("user-published", handleUserPublished);
   client.on('user-unpublished', handleUserUnublished)
